@@ -1,5 +1,6 @@
 ---
 import '../styles/globals.css';
+const BASE_URL = import.meta.env.BASE_URL;
 ---
 
 <html lang="es">
@@ -44,7 +45,7 @@ import '../styles/globals.css';
 				<h2 class="section-title">Artículos Destacados</h2>
 				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 					<!-- Gatos Post Card -->
-					<a href="/blog/gatos" class="card hover:scale-105 transition-transform block">
+					<a href={`${BASE_URL}blog/gatos`} class="card hover:scale-105 transition-transform block">
 						<div class="h-40 rounded-lg mb-4" style="background: linear-gradient(to bottom right, var(--color-wind-blue), var(--color-wind-accent))"></div>
 						<h3 class="text-xl font-bold mb-3" style="color: var(--color-wind-blue)">Gatos: Los Reyes del Hogar</h3>
 						<p class="text-gray-600 dark:text-gray-300 mb-4">Descubre la fascinante vida de nuestros compañeros felinos, su historia ancestral y por qué son considerados los animales más adorables del reino animal.</p>
@@ -52,7 +53,7 @@ import '../styles/globals.css';
 					</a>
 
 					<!-- Perros Post Card -->
-					<a href="/blog/perros" class="card hover:scale-105 transition-transform block">
+					<a href={`${BASE_URL}blog/perros`} class="card hover:scale-105 transition-transform block">
 						<div class="h-40 rounded-lg mb-4" style="background: linear-gradient(to bottom right, #f59e0b, #d97706)"></div>
 						<h3 class="text-xl font-bold mb-3" style="color: var(--color-wind-blue)">Perros: Los Mejores Amigos del Hombre</h3>
 						<p class="text-gray-600 dark:text-gray-300 mb-4">Conoce la historia milenaria de la amistad entre humanos y perros, y descubre su lealtad inquebrantable que los hace insustituibles.</p>
@@ -60,7 +61,7 @@ import '../styles/globals.css';
 					</a>
 
 					<!-- Pájaros Post Card -->
-					<a href="/blog/pajaros" class="card hover:scale-105 transition-transform block">
+					<a href={`${BASE_URL}blog/pajaros`} class="card hover:scale-105 transition-transform block">
 						<div class="h-40 rounded-lg mb-4" style="background: linear-gradient(to bottom right, #06b6d4, #0891b2)"></div>
 						<h3 class="text-xl font-bold mb-3" style="color: var(--color-wind-blue)">Pájaros Exóticos: Belleza Alada</h3>
 						<p class="text-gray-600 dark:text-gray-300 mb-4">Explora el espectacular mundo de los pájaros exóticos, sus plumajes vibrantes y comportamientos fascinantes que los hacen joyas de la naturaleza.</p>

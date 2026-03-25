@@ -1,5 +1,6 @@
 ---
 import '../../styles/globals.css';
+const BASE_URL = import.meta.env.BASE_URL;
 ---
 
 <html lang="es">
@@ -17,11 +18,11 @@ import '../../styles/globals.css';
 			<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="flex justify-between items-center h-16">
 					<div class="flex items-center">
-						<a href="/" class="text-2xl font-bold" style="color: var(--color-wind-blue)">July Blog</a>
-					</div>
-					<div class="flex space-x-6">
-						<a href="/" class="text-gray-600 hover:text-blue-600 dark:text-gray-300 transition">Inicio</a>
-						<a href="/" class="text-gray-600 hover:text-blue-600 dark:text-gray-300 transition">Blog</a>
+					<a href={BASE_URL} class="text-2xl font-bold" style="color: var(--color-wind-blue)">July Blog</a>
+				</div>
+				<div class="flex space-x-6">
+					<a href={BASE_URL} class="text-gray-600 hover:text-blue-600 dark:text-gray-300 transition">Inicio</a>
+					<a href={BASE_URL} class="text-gray-600 hover:text-blue-600 dark:text-gray-300 transition">Blog</a>
 						<a href="#" class="text-gray-600 hover:text-blue-600 dark:text-gray-300 transition">Sobre</a>
 						<a href="#" class="text-gray-600 hover:text-blue-600 dark:text-gray-300 transition">Contacto</a>
 					</div>
@@ -147,7 +148,7 @@ import '../../styles/globals.css';
 						<div class="h-40 rounded-lg mb-4" style="background: linear-gradient(to bottom right, #0f3460, #e94560)"></div>
 						<h3 class="text-xl font-bold mb-3" style="color: var(--color-wind-blue)">Gatos: Los Reyes del Hogar</h3>
 						<p class="text-gray-600 dark:text-gray-300 mb-4">Explora la fascinante vida de nuestros compañeros felinos más adorables.</p>
-						<a href="/blog/gatos" style="color: var(--color-wind-accent)" class="font-semibold hover:underline">Leer más →</a>
+						<a href={`${BASE_URL}blog/gatos`} style="color: var(--color-wind-accent)" class="font-semibold hover:underline">Leer más →</a>
 					</div>
 
 					<div class="card">
