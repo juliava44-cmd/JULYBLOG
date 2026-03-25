@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+:root {
+  --color-wind-blue: #0f3460;
+  --color-wind-accent: #e94560;
+  --color-wind-light: #f5f7fa;
+  --color-wind-dark: #1a1a1a;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold dark:text-white;
+    color: var(--color-wind-blue);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-2 text-white rounded-lg transition-colors duration-200;
+    background-color: var(--color-wind-blue);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--color-wind-accent);
+  }
+
+  .btn-secondary {
+    @apply px-6 py-2 rounded-lg transition-colors duration-200 dark:bg-gray-700 dark:text-white;
+    background-color: #e5e7eb;
+    color: var(--color-wind-blue);
+  }
+
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200;
+  }
+
+  .section-title {
+    @apply text-3xl font-bold mb-6 pb-3;
+    color: var(--color-wind-blue);
+    border-bottom: 2px solid var(--color-wind-accent);
+  }
+  
+  .dark .section-title {
+    @apply dark:text-white;
+  }
+}

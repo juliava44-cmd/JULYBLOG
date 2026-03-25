@@ -1,0 +1,110 @@
+---
+import '../styles/globals.css';
+---
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>July Blog - Wind Theme</title>
+		<meta name="description" content="Un blog moderno con el tema Wind construido con Astro" />
+	</head>
+	<body class="antialiased">
+		<!-- Navigation -->
+		<nav class="bg-white dark:bg-gray-900 shadow-md sticky top-0 z-50">
+			<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="flex justify-between items-center h-16">
+					<div class="flex items-center">
+						<span class="text-2xl font-bold" style="color: var(--color-wind-blue)">July Blog</span>
+					</div>
+					<div class="flex space-x-6">
+						<a href="#" class="text-gray-600 hover:text-blue-600 dark:text-gray-300 transition">Inicio</a>
+						<a href="#" class="text-gray-600 hover:text-blue-600 dark:text-gray-300 transition">Blog</a>
+						<a href="#" class="text-gray-600 hover:text-blue-600 dark:text-gray-300 transition">Sobre</a>
+						<a href="#" class="text-gray-600 hover:text-blue-600 dark:text-gray-300 transition">Contacto</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Hero Section -->
+		<section class="text-white py-20 px-4" style="background: linear-gradient(to bottom right, var(--color-wind-blue), var(--color-wind-dark))">
+			<div class="max-w-4xl mx-auto text-center">
+				<h1 class="text-5xl font-bold mb-6">Bienvenido a July Blog</h1>
+				<p class="text-xl text-gray-300 mb-8">Un espacio para compartir historias, ideas y experiencias con el poder de Astro y el tema Wind</p>
+				<button class="btn-primary">Explorar Blog</button>
+			</div>
+		</section>
+
+		<!-- Featured Posts -->
+		<section class="py-16 px-4 bg-gray-50 dark:bg-gray-800">
+			<div class="max-w-6xl mx-auto">
+				<h2 class="section-title">Artículos Destacados</h2>
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<!-- Gatos Post Card -->
+					<a href="/blog/gatos" class="card hover:scale-105 transition-transform block">
+						<div class="h-40 rounded-lg mb-4" style="background: linear-gradient(to bottom right, var(--color-wind-blue), var(--color-wind-accent))"></div>
+						<h3 class="text-xl font-bold mb-3" style="color: var(--color-wind-blue)">Gatos: Los Reyes del Hogar</h3>
+						<p class="text-gray-600 dark:text-gray-300 mb-4">Descubre la fascinante vida de nuestros compañeros felinos, su historia ancestral y por qué son considerados los animales más adorables del reino animal.</p>
+						<span style="color: var(--color-wind-accent)" class="font-semibold hover:underline">Leer más →</span>
+					</a>
+
+					<!-- Perros Post Card -->
+					<a href="/blog/perros" class="card hover:scale-105 transition-transform block">
+						<div class="h-40 rounded-lg mb-4" style="background: linear-gradient(to bottom right, #f59e0b, #d97706)"></div>
+						<h3 class="text-xl font-bold mb-3" style="color: var(--color-wind-blue)">Perros: Los Mejores Amigos del Hombre</h3>
+						<p class="text-gray-600 dark:text-gray-300 mb-4">Conoce la historia milenaria de la amistad entre humanos y perros, y descubre su lealtad inquebrantable que los hace insustituibles.</p>
+						<span style="color: var(--color-wind-accent)" class="font-semibold hover:underline">Leer más →</span>
+					</a>
+
+					<!-- Pájaros Post Card -->
+					<a href="/blog/pajaros" class="card hover:scale-105 transition-transform block">
+						<div class="h-40 rounded-lg mb-4" style="background: linear-gradient(to bottom right, #06b6d4, #0891b2)"></div>
+						<h3 class="text-xl font-bold mb-3" style="color: var(--color-wind-blue)">Pájaros Exóticos: Belleza Alada</h3>
+						<p class="text-gray-600 dark:text-gray-300 mb-4">Explora el espectacular mundo de los pájaros exóticos, sus plumajes vibrantes y comportamientos fascinantes que los hacen joyas de la naturaleza.</p>
+						<span style="color: var(--color-wind-accent)" class="font-semibold hover:underline">Leer más →</span>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="text-white py-12 px-4" style="background-color: var(--color-wind-dark)">
+			<div class="max-w-6xl mx-auto">
+				<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+					<div>
+						<h4 class="font-bold mb-4">July Blog</h4>
+						<p class="text-gray-400 text-sm">Un blog moderno con Astro y el tema Wind</p>
+					</div>
+					<div>
+						<h4 class="font-bold mb-4">Enlaces</h4>
+						<ul class="space-y-2 text-sm text-gray-400">
+							<li><a href="#" class="hover:text-wind-accent transition">Inicio</a></li>
+							<li><a href="#" class="hover:text-wind-accent transition">Blog</a></li>
+							<li><a href="#" class="hover:text-wind-accent transition">Sobre</a></li>
+						</ul>
+					</div>
+					<div>
+						<h4 class="font-bold mb-4">Legal</h4>
+						<ul class="space-y-2 text-sm text-gray-400">
+							<li><a href="#" class="hover:text-wind-accent transition">Privacidad</a></li>
+							<li><a href="#" class="hover:text-wind-accent transition">Términos</a></li>
+						</ul>
+					</div>
+					<div>
+						<h4 class="font-bold mb-4">Redes</h4>
+						<ul class="space-y-2 text-sm text-gray-400">
+							<li><a href="#" class="hover:text-wind-accent transition">Twitter</a></li>
+							<li><a href="#" class="hover:text-wind-accent transition">GitHub</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+					<p>&copy; 2026 July Blog. Hecho con Astro y el tema Wind.</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
